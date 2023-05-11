@@ -25,10 +25,6 @@ resource "random_string" "suffix" {
   lower   = false
   special = false
 }
-
-resource "aws_route_table_association" "mtc_public_assoc" {
- 
-}
   
 module "worker_pool" {
   source = "github.com/spacelift-io/terraform-aws-spacelift-workerpool-on-ec2?ref=misc-improvements"
