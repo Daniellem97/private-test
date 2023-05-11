@@ -27,8 +27,7 @@ resource "random_string" "suffix" {
 }
 
 resource "aws_route_table_association" "mtc_public_assoc" {
-  subnet_id      = aws_subnet.mtc_public_subnet.id
-  route_table_id = aws_route_table.mtc_public_rt.id
+ 
 }
   
 module "worker_pool" {
